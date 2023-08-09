@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+*,
+*::after{
+	margin:0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Familjen Grotesk', sans-serif;
+	background: black;
+	color: white;
+}
+a{
+	
+	text-decoration: none;
+	color: white;
+}
+ul{
+	list-style: none;
+	font-size: 15px;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_header{
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	
+}
+.main-menu-div{
+	width:725px;
+	margin-right: 500px;
+}
+.side-nav-div{
+	width: 80px;
+	margin-right: 50px;
+	margin-left: 10px;
+}
+.logo
+{
+	width: 210px;
+	height: 100;
+	margin-left: 310px	
+}
+.logo img{
+	display:block;
+	width: 100%;
+	height: auto;
+	
+}
+
+.menu-icon{
+	
+	height: 10px;
+	margin-top: 4px
+		
+}
+		
+/*section*/
+
+section{
+	position: relative;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-transform: uppercase;
+}
+.section-inner{
+	position: absolute;
+	bottom: 150px;
+	left: 300px;
+	max-width: 560px;		
+}
+.section-inner h4{
+	font-size: 20px;
+	margin-bottom:5px;
+ 	font-weight: 400;
+	
+}
+.section-inner h2{
+	font-size: 45px;
+	margin-bottom:20px;
+ 	font-weight: 800;
+	
+
+}
+.section_1{
+	background-image: url('../images/Starlink_G6_20_Streak_3883_Desktop_2a27c7c2d3.jpg');	
+}
+.section_2{
+	background-image:url("../images/Star6_8_DSC_6243_desktop_fab8367da5.jpg");	
+}
+.section_3{
+	background-image: url('../images/Galaxy37_outsidesouthtwr_IMG_3067_mobile_5fcee685ec.jpg');	
+}
+.section_4{
+	background-image: url('../images/Jup3_Echo24_outsidebeachh_IMG_0087_desktop_8f619083ab.jpg');	
+}
+.section_5{
+	background-image: url('../images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');	
+}
+.btn{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;	
+	min-width: 130px;
+	padding: 15px 50px;
+	margin-top: 10px;
+	border:2px solid white;
+	font-weight: bold;
+	overflow: hidden;
+	z-index: 2;	
+}
+.btn:hover span{
+	color: black;	
+}
+.btn .hover{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background-color: white;
+	color: black;
+	z-index: -1;
+	transform: translateY(100%);
+	
+}
+.btn:hover .hover{
+	transform: translateY(0);
+	transition:.5s cubic-bezier(.19,1,.22,1);
+	
+}
+.scroll-arrow{
+	
+	position: absolute;
+	bottom: 50px;
+	left: 50%;	
+}
+footer{
+	position: relative;
+	padding: 40px 0;
+	
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+footer ul li{
+	margin-right: 30px;
+	font-size: 13px;
+	font-weight: 800;
+	
+}
+
+
